@@ -18,7 +18,7 @@ if(env === 'dev') {
     }
 };
 
-if(env === 'production') {
+if(env === 'prd') {
     MYSQL_CONFIG = {
         host: 'localhost',
         user: 'root',

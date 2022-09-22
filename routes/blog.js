@@ -27,6 +27,7 @@ router.get("/list", async (ctx, next) => {
     }
 
     const listData = await getList(author, keyword);
+    console.log('this is list');
     ctx.body = new SuccessModel(listData)
 });
 
