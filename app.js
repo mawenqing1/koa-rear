@@ -18,8 +18,6 @@ const user = require('./routes/user')
 // error handler
 onerror(app)
 
-console.log(process.env);
-
 // middlewares
 app.use(bodyparser({
   enableTypes:['json', 'form', 'text']

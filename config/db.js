@@ -2,7 +2,7 @@ const env = process.env.NODE_ENV;
 
 let MYSQL_CONFIG
 let REDIS_CONFIG
-
+console.log(env,'env');
 if(env === 'dev') {
     MYSQL_CONFIG = {
         host: 'localhost',
