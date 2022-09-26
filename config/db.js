@@ -20,16 +20,16 @@ if(env === 'dev') {
 
 if(env === 'prd') {
     MYSQL_CONFIG = {
-        host: 'localhost',
-        user: 'root',
-        password: 'mwq',
-        port: '3306',
-        database: 'myblog'
+        host: '150.158.170.200',
+        user: 'mwq',
+        password: 'm147258369.',
+        port: '16346',
+        database: 'blog'
     }
 
     REDIS_CONFIG = {
-        port: 6379,
-        host: '127.0.0.1'
+        port: 16346,
+        host: '150.158.170.200'
     }
 };
 
