@@ -20,7 +20,7 @@ if(env === 'dev') {
 
 if(env === 'prd') {
     MYSQL_CONFIG = {
-        host: '150.158.170.200',
+        host: '127.0.0.1',
         user: 'mwq',
         password: 'm147258369.',
         port: '3306',
