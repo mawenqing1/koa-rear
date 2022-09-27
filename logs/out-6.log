@@ -1,0 +1,219 @@
+2022-09-23 10:59:03: prd env
+2022-09-23 10:59:03: {
+  SILENT: 'true',
+  PM2_HOME: '/Users/mawenqing/.pm2',
+  TERM_SESSION_ID: 'w0t0p0:09C025ED-8210-4241-966B-F82FB0D17C0C',
+  SSH_AUTH_SOCK: '/private/tmp/com.apple.launchd.GlYDtppXvP/Listeners',
+  LC_TERMINAL_VERSION: '3.4.16',
+  COLORFGBG: '15;0',
+  ITERM_PROFILE: 'Default',
+  XPC_FLAGS: '0x0',
+  LANG: 'zh_CN.UTF-8',
+  PWD: './',
+  SHELL: '/bin/zsh',
+  __CFBundleIdentifier: 'com.microsoft.VSCode',
+  TERM_PROGRAM_VERSION: '1.71.1',
+  TERM_PROGRAM: 'vscode',
+  PATH: '/Users/mawenqing/Documents/xfw/koa-rear/node_modules/.bin:/Users/mawenqing/Documents/xfw/node_modules/.bin:/Users/mawenqing/Documents/node_modules/.bin:/Users/mawenqing/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/opt/mysql@5.7/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/opt/mysql@5.7/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+  LC_TERMINAL: 'iTerm2',
+  COLORTERM: 'truecolor',
+  COMMAND_MODE: 'unix2003',
+  TERM: 'xterm-256color',
+  HOME: '/Users/mawenqing',
+  TMPDIR: '/var/folders/h4/7yfpqm8s63n9xzlfd7nl1rh80000gn/T/',
+  USER: 'mawenqing',
+  XPC_SERVICE_NAME: '0',
+  LOGNAME: 'mawenqing',
+  ITERM_SESSION_ID: 'w0t0p0:09C025ED-8210-4241-966B-F82FB0D17C0C',
+  __CF_USER_TEXT_ENCODING: '0x1F5:0x19:0x34',
+  SHLVL: '2',
+  OLDPWD: '/Users/mawenqing',
+  HOMEBREW_BOTTLE_DOMAIN: 'https://mirrors.aliyun.com/homebrew/homebrew-bottles',
+  HOMEBREW_PREFIX: '/opt/homebrew',
+  HOMEBREW_CELLAR: '/opt/homebrew/Cellar',
+  HOMEBREW_REPOSITORY: '/opt/homebrew',
+  MANPATH: '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/opt/homebrew/share/man:',
+  INFOPATH: '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+  ZSH: '/Users/mawenqing/.oh-my-zsh',
+  PAGER: 'less',
+  LESS: '-R',
+  LSCOLORS: 'Gxfxcxdxbxegedabagacad',
+  _: '/Users/mawenqing/Documents/xfw/koa-rear/node_modules/.bin/cross-env',
+  PM2_USAGE: 'CLI',
+  windowsHide: 'true',
+  namespace: 'default',
+  kill_retry_time: '100',
+  username: 'mawenqing',
+  treekill: 'true',
+  automation: 'true',
+  pmx: 'true',
+  instance_var: 'NODE_APP_INSTANCE',
+  ignore_watch: 'node_modules,logs',
+  watch: 'true',
+  autorestart: 'true',
+  vizion: 'true',
+  instances: '4',
+  env: '[object Object]',
+  log_date_format: 'YYYY-MM-DD HH:mm:ss',
+  cwd: './',
+  name: 'koa-rear',
+  node_args: '',
+  pm_exec_path: '/Users/mawenqing/Documents/xfw/koa-rear/bin/www.js',
+  pm_cwd: '/Users/mawenqing/Documents/xfw/koa-rear',
+  exec_interpreter: 'node',
+  exec_mode: 'cluster_mode',
+  pm_out_log_path: '/Users/mawenqing/Documents/xfw/koa-rear/logs/out-6.log',
+  pm_err_log_path: '/Users/mawenqing/Documents/xfw/koa-rear/logs/err-6.log',
+  pm_pid_path: '/Users/mawenqing/.pm2/pids/koa-rear-6.pid',
+  km_link: 'false',
+  vizion_running: 'false',
+  NODE_APP_INSTANCE: '1',
+  'koa-rear': '{}',
+  PM2_JSON_PROCESSING: 'true',
+  NODE_ENV: 'prd',
+  npm_config_prefix: '/usr/local',
+  npm_node_execpath: '/usr/local/bin/node',
+  GIT_ASKPASS: '/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+  VSCODE_GIT_ASKPASS_NODE: '/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper',
+  npm_config_user_agent: 'npm/8.19.1 node/v16.16.0 darwin arm64 workspaces/false',
+  VSCODE_GIT_IPC_HANDLE: '/var/folders/h4/7yfpqm8s63n9xzlfd7nl1rh80000gn/T/vscode-git-e2c8d19b46.sock',
+  npm_lifecycle_script: 'cross-env NODE_ENV=prd pm2 start pm2.conf.json',
+  npm_config_cache: '/Users/mawenqing/.npm',
+  VSCODE_GIT_ASKPASS_MAIN: '/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+  VSCODE_INJECTION: '1',
+  npm_package_version: '0.1.0',
+  npm_config_node_gyp: '/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js',
+  VSCODE_GIT_ASKPASS_EXTRA_ARGS: '--ms-enable-electron-run-as-node',
+  npm_package_name: 'koa-rear',
+  EDITOR: 'vi',
+  npm_lifecycle_event: 'prd',
+  npm_command: 'run-script',
+  npm_config_init_module: '/Users/mawenqing/.npm-init.js',
+  npm_config_userconfig: '/Users/mawenqing/.npmrc',
+  npm_package_json: '/Users/mawenqing/Documents/xfw/koa-rear/package.json',
+  npm_execpath: '/usr/local/lib/node_modules/npm/bin/npm-cli.js',
+  npm_config_globalconfig: '/usr/local/etc/npmrc',
+  npm_config_local_prefix: '/Users/mawenqing/Documents/xfw/koa-rear',
+  npm_config_noproxy: '',
+  COLOR: '1',
+  MallocNanoZone: '0',
+  ORIGINAL_XDG_CURRENT_DESKTOP: 'undefined',
+  ZDOTDIR: '/var/folders/h4/7yfpqm8s63n9xzlfd7nl1rh80000gn/T/vscode-zsh',
+  npm_config_global_prefix: '/usr/local',
+  npm_config_metrics_registry: 'https://registry.npmjs.org/',
+  INIT_CWD: '/Users/mawenqing/Documents/xfw/koa-rear',
+  NODE: '/usr/local/bin/node',
+  unique_id: '4ba16cf2-1c54-4b7e-bf81-1fb4d7a84d9d',
+  status: 'launching',
+  pm_uptime: '1663901943084',
+  axm_actions: '',
+  axm_monitor: '[object Object]',
+  axm_options: '[object Object]',
+  axm_dynamic: '[object Object]',
+  created_at: '1663901943084',
+  pm_id: '6',
+  restart_time: '0',
+  unstable_restarts: '0',
+  _pm2_version: '5.2.0'
+}
+2022-09-23 11:00:21: prd env
+2022-09-23 11:00:27: prd env
+2022-09-23 11:00:32: prd env
+2022-09-23 11:01:02: prd env
+2022-09-23 23:57:44: prd env
+2022-09-26 07:32:08: prd env
+2022-09-26 19:34:42: prd env
+2022-09-26 20:16:05: prd env
+2022-09-26 20:16:05: prd env
+2022-09-26 20:16:06: prd env
+2022-09-26 20:16:06: prd env
+2022-09-26 20:16:06: prd env
+2022-09-26 20:16:06: prd env
+2022-09-26 20:16:06: prd env
+2022-09-26 20:16:07: prd env
+2022-09-26 20:16:07: prd env
+2022-09-26 20:16:07: prd env
+2022-09-26 20:16:07: prd env
+2022-09-26 20:16:07: prd env
+2022-09-26 20:16:08: prd env
+2022-09-26 20:16:08: prd env
+2022-09-26 20:16:08: prd env
+2022-09-26 20:16:08: prd env
+2022-09-26 20:16:22: prd env
+2022-09-26 20:16:22: prd env
+2022-09-26 20:16:22: prd env
+2022-09-26 20:16:23: prd env
+2022-09-26 20:16:23: prd env
+2022-09-26 20:16:23: prd env
+2022-09-26 20:16:23: prd env
+2022-09-26 20:16:23: prd env
+2022-09-26 20:16:24: prd env
+2022-09-26 20:16:24: prd env
+2022-09-26 20:16:24: prd env
+2022-09-26 20:16:24: prd env
+2022-09-26 20:16:24: prd env
+2022-09-26 20:16:25: prd env
+2022-09-26 20:16:25: prd env
+2022-09-26 20:16:25: prd env
+2022-09-26 20:16:28: prd env
+2022-09-26 20:16:28: prd env
+2022-09-26 20:16:28: prd env
+2022-09-26 20:16:29: prd env
+2022-09-26 20:16:29: prd env
+2022-09-26 20:16:29: prd env
+2022-09-26 20:16:29: prd env
+2022-09-26 20:16:30: prd env
+2022-09-26 20:16:30: prd env
+2022-09-26 20:16:30: prd env
+2022-09-26 20:16:30: prd env
+2022-09-26 20:16:30: prd env
+2022-09-26 20:16:31: prd env
+2022-09-26 20:16:31: prd env
+2022-09-26 20:16:31: prd env
+2022-09-26 20:16:31: prd env
+2022-09-26 20:16:31: prd env
+2022-09-26 20:16:32: prd env
+2022-09-26 20:16:32: prd env
+2022-09-26 20:16:32: prd env
+2022-09-26 20:16:32: prd env
+2022-09-26 20:16:32: prd env
+2022-09-26 20:18:53: prd env
+2022-09-26 20:19:04: prd env
+2022-09-26 20:19:14: prd env
+2022-09-26 20:19:24: prd env
+2022-09-26 20:19:34: prd env
+2022-09-26 20:19:44: prd env
+2022-09-26 20:19:55: prd env
+2022-09-26 20:20:05: prd env
+2022-09-26 20:20:15: prd env
+2022-09-26 20:20:25: prd env
+2022-09-26 20:20:36: prd env
+2022-09-26 20:20:37: prd env
+2022-09-26 20:22:37: prd env
+2022-09-26 20:22:56: prd env
+2022-09-26 20:22:58: prd env
+2022-09-26 20:23:01: prd env
+2022-09-27 10:12:59: prd env
+2022-09-27 10:13:21: prd env
+2022-09-27 10:15:22: prd env
+2022-09-27 10:15:45: prd env
+2022-09-27 10:15:49: prd env
+2022-09-27 10:16:11: prd env
+2022-09-27 10:16:17: prd env
+2022-09-27 10:16:21: prd env
+2022-09-27 20:25:54: prd env
+2022-09-27 20:26:03: prd env
+2022-09-27 20:26:11: prd env
+2022-09-27 20:26:19: prd env
+2022-09-27 20:26:27: prd env
+2022-09-27 20:26:28: prd env
+2022-09-27 20:26:36: prd env
+2022-09-27 20:26:44: prd env
+2022-09-27 20:26:46: prd env
+2022-09-27 20:26:54: prd env
+2022-09-27 20:26:58: prd env
+2022-09-27 20:27:05: prd env
+2022-09-27 20:27:10: prd env
+2022-09-27 20:27:18: prd env
+2022-09-27 20:27:26: prd env
+2022-09-27 20:27:34: prd env
