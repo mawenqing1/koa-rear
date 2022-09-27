@@ -23,12 +23,12 @@ if(env === 'prd') {
         host: '150.158.170.200',
         user: 'mwq',
         password: 'm147258369.',
-        port: '16346',
+        port: '3306',
         database: 'blog'
     }
 
     REDIS_CONFIG = {
-        port: 16346,
+        port: 6379,
         host: '150.158.170.200'
     }
 };
