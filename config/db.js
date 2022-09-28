@@ -29,7 +29,7 @@ if(env === 'prd') {
 
     REDIS_CONFIG = {
         port: 6379,
-        host: '150.158.170.200'
+        host: '127.0.0.1'
     }
 };
 
