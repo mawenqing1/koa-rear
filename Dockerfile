@@ -19,6 +19,7 @@ COPY . .
 
 # 安装依赖
 RUN npm install
+RUN npm install -g pm2
 
 
 # 暴露端口
