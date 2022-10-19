@@ -11,7 +11,7 @@ router.post("/login", async (ctx, next) => {
         //set session
         ctx.session.username = data.username;
         ctx.session.realname = data.realname; 
-        ctx.body = new SuccessModel("", "登陆成功");
+        ctx.body = new SuccessModel("登陆成功");
         return
     }
     ctx.body = new ErrorModel("登陆失败")
