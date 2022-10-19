@@ -5,10 +5,10 @@ const { MYSQL_CONFIG } = require("../config/db");
 // const con = mysql.createConnection(MYSQL_CONFIG);
 
 // con.connect();
+let pool = mysql.createPool(MYSQL_CONFIG);
 
 const exec = (sql) => {
     const promise = new Promise((resolve, reject) => {
-        let pool = mysql.createPool(MYSQL_CONFIG);
         pool.getConnection(function (err, connection) {
             connection.query(sql, (err, res) => {
                 if (err) {

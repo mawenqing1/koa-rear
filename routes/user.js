@@ -5,13 +5,15 @@ const { SuccessModel, ErrorModel } = require('../model/resModel');
 router.prefix("/api/user");
 
 router.post("/login", async (ctx, next) => {
+    // console.log(ctx.request.body);
     const { username, password } = ctx.request.body;
     const data = await login(username, password);
+    console.log(data);
     if(data.username) {
         //set session
         ctx.session.username = data.username;
         ctx.session.realname = data.realname; 
-        ctx.body = new SuccessModel();
+        ctx.body = new SuccessModel("", "登陆成功");
         return
     }
     ctx.body = new ErrorModel("登陆失败")
