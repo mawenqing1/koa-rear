@@ -13,7 +13,7 @@ const login = async (username, password) => {
     password = escape(password)
     const sql = `select username, realname from users where username=${username} and password=${password}`
     const res = exec(sql);
-    return res[0] || {}
+    return res || {}
 }
 
 module.exports = {
