@@ -79,6 +79,10 @@ const deleteBlog = async (id, author) => {
     return false
 }
 
+/**
+ * get article count
+ * @returns article count
+ */
 const getBlogCount = async () => {
     const sql = `SELECT COUNT(id) FROM blogs;`
     const count = await exec(sql);
