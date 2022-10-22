@@ -25,7 +25,7 @@ const getList = async (author, keyword) => {
  * @returns 
  */
 const getDetail = async (id) => {
-    const sql = `select * from blogs where id='${id}'`;
+    const sql = `select * from blogs where id='${id}';`;
     const rows = await exec(sql)
     return rows[0]
 }
@@ -56,7 +56,7 @@ const newBlog = async (blogData = {}) => {
 const updateBlog = async (id, blogData = {}) => {
     const title = xss(blogData.title);
     const content = xss(blogData.content)
-    const sql = `update blogs set title='${title}', content='${content}' where id=${id}`
+    const sql = `update blogs set title='${title}', content='${content}' where id=${id};`
     const updateData = await exec(sql);
     if(updateData.affectedRows > 0) {
         return true
@@ -71,7 +71,7 @@ const updateBlog = async (id, blogData = {}) => {
  * @returns 
  */
 const deleteBlog = async (id, author) => {
-    const sql = `delete from blogs where id=${id} and author='${author}'`
+    const sql = `delete from blogs where id=${id} and author='${author}';`
     const delData = await exec(sql);
     if(delData.affectedRows > 0) {
         return true
@@ -79,10 +79,17 @@ const deleteBlog = async (id, author) => {
     return false
 }
 
+const getBlogCount = async () => {
+    const sql = `SELECT COUNT(id) FROM blogs;`
+    const count = await exec(sql);
+    return count;
+}
+
 module.exports = {
     getList,
     getDetail,
     newBlog,
     updateBlog,
-    deleteBlog
+    deleteBlog,
+    getBlogCount
 };

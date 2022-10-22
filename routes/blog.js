@@ -5,6 +5,7 @@ const {
     newBlog,
     updateBlog,
     deleteBlog,
+    getBlogCount
 } = require("../controller/blog");
 const { SuccessModel, ErrorModel } = require("../model/resModel");
 const loginCheck = require("../middleware/loginCheck");
@@ -26,8 +27,12 @@ router.get("/list", async (ctx, next) => {
         author = ctx.session.username;
     }
 
-    const listData = await getList(author, keyword);
-    console.log('this is list');
+    let listData = await getList(author, keyword);
+    if(listData.length > 0) {
+        listData.forEach(el => {
+            el.content.replace(/V1#_1/g, "\"")
+        });
+    }
     ctx.body = new SuccessModel(listData)
 });
 
@@ -72,5 +77,10 @@ router.post("/delete", loginCheck, async (ctx, next) => {
         ctx.body = new ErrorModel("删除失败")
     }
 });
+
+router.get("/getBlogCount", async(ctx, next) => {
+    const data = await getBlogCount();
+    ctx.body = new SuccessModel(data);
+})
 
 module.exports = router;
