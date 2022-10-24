@@ -57,7 +57,7 @@ router.post("/new", loginCheck, async (ctx, next) => {
  * update blog
  */
 router.post("/update", loginCheck, async (ctx, next) => {
-    const data = await updateBlog(ctx.query.id, ctx.query.body);
+    const data = await updateBlog(ctx.request.body.id, ctx.request.body);
     if(data) {
         ctx.body = new SuccessModel()
     } else {
