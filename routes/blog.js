@@ -70,7 +70,7 @@ router.post("/update", loginCheck, async (ctx, next) => {
  */
 router.post("/delete", loginCheck, async (ctx, next) => {
     const author = ctx.session.username;
-    const data = await deleteBlog(ctx.query.id, author);
+    const data = await deleteBlog(ctx.request.body.id, author);
     if (data) {
         ctx.body = new SuccessModel()
     } else {
