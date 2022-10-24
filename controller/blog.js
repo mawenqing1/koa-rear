@@ -97,7 +97,7 @@ const getBlogCount = async () => {
 const renewRatings = async (id) => {
     const sql1 = `select ratings from blogs where id=${id};`;
     const res = await exec(sql1);
-    const sql2 = `insert into blogs (ratings) values ('${res[0][ratings] + 1}');`
+    const sql2 = `update blogs set ratings='${res[0].ratings + 1}' where id=${id};`
     await exec(sql2);
 }
 
