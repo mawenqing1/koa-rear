@@ -27,7 +27,7 @@ const getList = async (author, keyword) => {
 const getDetail = async (id) => {
     const sql = `select * from blogs where id='${id}';`;
     const rows = await exec(sql);
-    await renewRatings();
+    await renewRatings(id);
     return rows[0]
 }
 
@@ -90,6 +90,10 @@ const getBlogCount = async () => {
     return count[0]['COUNT(id)'];
 }
 
+/**
+ * renew article ratings
+ * @param {Number} id 
+ */
 const renewRatings = async (id) => {
     const sql1 = `select ratings from blogs where id=${id};`;
     const res = await exec(sql1);
