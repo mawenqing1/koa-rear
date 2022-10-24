@@ -56,7 +56,7 @@ const newBlog = async (blogData = {}) => {
 const updateBlog = async (id, blogData = {}) => {
     const title = xss(blogData.title);
     const content = xss(blogData.content)
-    const sql = `update blogs set title='${title}', content='${content}' where id=${id};`
+    const sql = `update blogs set title='${title}', content="${content}" where id=${id};`
     const updateData = await exec(sql);
     if(updateData.affectedRows > 0) {
         return true
