@@ -26,7 +26,8 @@ const getList = async (author, keyword) => {
  */
 const getDetail = async (id) => {
     const sql = `select * from blogs where id='${id}';`;
-    const rows = await exec(sql)
+    const rows = await exec(sql);
+    await renewRatings();
     return rows[0]
 }
 
@@ -87,6 +88,13 @@ const getBlogCount = async () => {
     const sql = `SELECT COUNT(id) FROM blogs;`
     const count = await exec(sql);
     return count[0]['COUNT(id)'];
+}
+
+const renewRatings = async (id) => {
+    const sql1 = `select ratings from blogs where id=${id};`;
+    const res = await exec(sql1);
+    const sql2 = `insert into blogs (ratings) values ('${res[0][ratings] + 1}');`
+    await exec(sql2);
 }
 
 module.exports = {
