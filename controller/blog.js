@@ -101,11 +101,18 @@ const renewRatings = async (id) => {
     await exec(sql2);
 }
 
+const getTagList = async () => {
+    const sql = `select tag, COUNT(*) cnt from blogs group by tag;`
+    const res = await exec(sql);
+    return res
+}
+
 module.exports = {
     getList,
     getDetail,
     newBlog,
     updateBlog,
     deleteBlog,
-    getBlogCount
+    getBlogCount,
+    getTagList
 };

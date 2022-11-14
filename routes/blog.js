@@ -5,7 +5,8 @@ const {
     newBlog,
     updateBlog,
     deleteBlog,
-    getBlogCount
+    getBlogCount,
+    getTagList
 } = require("../controller/blog");
 const { SuccessModel, ErrorModel } = require("../model/resModel");
 const loginCheck = require("../middleware/loginCheck");
@@ -78,9 +79,17 @@ router.post("/delete", loginCheck, async (ctx, next) => {
     }
 });
 
+/**
+ * get blog article count
+ */
 router.get("/getBlogCount", async(ctx, next) => {
     const data = await getBlogCount();
     ctx.body = new SuccessModel(data);
-})
+});
+
+router.get("/tagList", async(ctx, next) => {
+    const data = await getTagList();
+    ctx.body = new SuccessModel(data);
+});
 
 module.exports = router;
