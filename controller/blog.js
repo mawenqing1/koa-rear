@@ -39,9 +39,10 @@ const getDetail = async (id) => {
 const newBlog = async (blogData = {}) => {
     const title = xss(blogData.title);
     const content = xss(blogData.content);
-    const author = blogData.author
+    const author = blogData.author;
+    const tag = blogData.tag;
     const createTime = Date.now();
-    const sql = `insert into blogs (title, content, author, createtime) values ('${title}', "${content}", '${author}', ${createTime});`
+    const sql = `insert into blogs (title, content, author, createtime, tag) values ('${title}', "${content}", '${author}', ${createTime}, '${tag}');`
     const insertData = await exec(sql)
     return {
         id: insertData.insertId
