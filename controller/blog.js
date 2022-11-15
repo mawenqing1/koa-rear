@@ -7,13 +7,16 @@ const xss = require('xss')
  * @param {String} keyword 
  * @returns 
  */
-const getList = async (author, keyword) => {
+const getList = async (author, keyword, tag) => {
     let sql = `select * from blogs where 1=1 `;
     if(author) {
         sql += `and author='${author}' `
     };
     if(keyword) {
         sql += `and title like '%${keyword}%' `
+    };
+    if(tag) {
+        sql += `and tag like '%${tag}%' `
     };
     sql += `order by createtime desc;`
     return await exec(sql)

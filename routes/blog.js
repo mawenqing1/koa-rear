@@ -19,6 +19,7 @@ router.prefix("/api/blog");
 router.get("/list", async (ctx, next) => {
     let author = ctx.query.author || "";
     const keyword = ctx.query.keyword || "";
+    const tag = ctx.query.tag || "";
 
     if (ctx.query.isadmin) {
         if (ctx.session.username == null) {
@@ -28,7 +29,7 @@ router.get("/list", async (ctx, next) => {
         author = ctx.session.username;
     }
 
-    let listData = await getList(author, keyword);
+    let listData = await getList(author, keyword, tag);
     if(listData.length > 0) {
         listData.forEach(el => {
             el.content.replace(/V1#_1/g, "\"")
