@@ -14,6 +14,7 @@ const { REDIS_CONFIG } = require('./config/db')
 
 const blog = require('./routes/blog')
 const user = require('./routes/user')
+const comment = require('./routes/comment')
 
 // error handler
 onerror(app)
@@ -66,6 +67,7 @@ if(ENV != 'prd') {
 // routes
 app.use(blog.routes(), blog.allowedMethods())
 app.use(user.routes(), user.allowedMethods())
+app.use(comment.routes(), comment.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {

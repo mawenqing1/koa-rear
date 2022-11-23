@@ -88,6 +88,9 @@ router.get("/getBlogCount", async(ctx, next) => {
     ctx.body = new SuccessModel(data);
 });
 
+/**
+ * tag list
+ */
 router.get("/tagList", async(ctx, next) => {
     const data = await getTagList();
     ctx.body = new SuccessModel(data);
