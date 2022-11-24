@@ -20,7 +20,11 @@ const addComment = async (request) => {
 }
 
 const getCommentList = async (query) => {
-    const sql = ``;
+    console.log('query',query);
+    const current = query.current || 1;
+    const pageSize = query.pageSize || 10;
+    const sql = `select * from comment where 1=1 limit ${(current-1) * pageSize},${pageSize};`
+    
 }
 
 module.exports = {
