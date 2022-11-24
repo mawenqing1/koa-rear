@@ -8,7 +8,8 @@ router.prefix("/api/comment");
  * tag list
  */
  router.post("/add", async(ctx, next) => {
-    const data = await addComment(ctx)
+    const data = await addComment(ctx);
+    ctx.body = new SuccessModel(data);
 });
 
 module.exports = router;
