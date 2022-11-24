@@ -2,6 +2,11 @@ const { exec, escape } = require('../db/mysql');
 const xss = require('xss')
 const getIp = require('../service/getIp');
 
+/**
+ * add comment
+ * @param {Object} request 
+ * @returns comment id
+ */
 const addComment = async (request) => {
     const city = await getIp(request.header['x-forwarded-for']);
     const content = xss(request.request.body.content);
@@ -14,6 +19,11 @@ const addComment = async (request) => {
     }
 }
 
+const getCommentList = async (query) => {
+    const sql = ``;
+}
+
 module.exports = {
-    addComment
+    addComment,
+    getCommentList
 }

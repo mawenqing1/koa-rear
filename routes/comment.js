@@ -1,6 +1,6 @@
 const router = require("koa-router")();
 const { SuccessModel, ErrorModel } = require("../model/resModel");
-const { addComment }  = require("../controller/comment");
+const { addComment, getCommentList }  = require("../controller/comment");
 
 router.prefix("/api/comment");
 
@@ -11,5 +11,9 @@ router.prefix("/api/comment");
     const data = await addComment(ctx);
     ctx.body = new SuccessModel(data);
 });
+
+router.get("/getList", async(ctx, next) => {
+    const data = await getCommentList(ctx.query);
+})
 
 module.exports = router;
