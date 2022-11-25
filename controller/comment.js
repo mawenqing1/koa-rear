@@ -20,12 +20,18 @@ const addComment = async (request) => {
 }
 
 const getCommentList = async (query) => {
-    console.log('query',query);
+    let totality = {};
     const current = query.current || 1;
     const pageSize = query.pageSize || 10;
     const sql = `select comment.*, b.name as toName, b.content as toContent from comment left join (select * from comment where toId is null) b on comment.toId = b.id limit ${(current-1) * pageSize},${pageSize};`
+    const sqlCnt = `SELECT COUNT(id) total FROM comment;`
     const list = await exec(sql);
-    return list;
+    const res = await exec(sqlCnt);
+    totality.list = list;
+    totality.total = res[0].total;
+    totality.current = Number(current);
+    totality.pageSize = Number(pageSize);
+    return totality;
 }
 
 module.exports = {
