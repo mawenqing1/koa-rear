@@ -14,6 +14,7 @@ router.prefix("/api/comment");
 
 router.get("/getList", async(ctx, next) => {
     const data = await getCommentList(ctx.query);
+    ctx.body = new SuccessModel(data);
 })
 
 module.exports = router;
